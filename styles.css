@@ -5,7 +5,7 @@
   --accent: #3df083; 
   --card: rgba(255,255,255,0.06);
   --border: rgba(255,255,255,0.12);
-  --bg-image: image-set(url("bg.png") 1x, url("bg@2x.webp") 2x);
+  --bg-image: url("bg.webp");
   --feather-start: 62%;
   --feather-end: 97%;
 }
