@@ -33,19 +33,24 @@ body{
   position: relative;
 }
 
-body::before{
-  content:"";
-  position: fixed; 
-  inset: 0;
-  z-index: 0; 
-  background: var(--bg-image) center/cover no-repeat;
+body::before {
+  content: "";
+  position: fixed;
+  inset: 40px;
+  z-index: 0;
+  pointer-events: none;
+
+  background-image: var(--bg-image);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
   -webkit-mask-image: radial-gradient(
     circle at 50% 50%,
     #000 var(--feather-start),
     transparent var(--feather-end)
   );
-  mask-image: radial-gradient(
+          mask-image: radial-gradient(
     circle at 50% 50%,
     #000 var(--feather-start),
     transparent var(--feather-end)
