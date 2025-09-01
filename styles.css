@@ -84,12 +84,15 @@ body{
   padding: 10px 16px;
   border-radius: 999px;
   text-decoration: none;
-  background: var(--card);   /* same tone as the card */
+  background: var(--card);
   color: var(--fg);
   border: 1.5px solid var(--border);
   font-weight: 600;
   transition: border-color 0.2s, color 0.2s;
+  min-width: 120px; 
+  text-align: center; 
 }
+
 
 .btn:hover {
   border-color: var(--accent);
