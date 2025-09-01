@@ -72,26 +72,26 @@ body{
 }
 .link:hover{ border-bottom-color: var(--accent) }
 
-.cta{
-  display:flex;
-  justify-content:center;
-  gap:10px;
-  flex-wrap:wrap;
+.cta {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
-.btn{
-  display:inline-block;
+.btn {
+  display: inline-block;
   padding: 10px 16px;
   border-radius: 999px;
-  text-decoration:none;
-  background: transparent;
+  text-decoration: none;
+  background: var(--card);   /* same tone as the card */
   color: var(--fg);
   border: 1.5px solid var(--border);
   font-weight: 600;
   transition: border-color 0.2s, color 0.2s;
 }
 
-.btn:hover{
+.btn:hover {
   border-color: var(--accent);
   color: var(--accent);
 }
