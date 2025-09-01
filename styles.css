@@ -6,8 +6,8 @@
   --card: rgba(255,255,255,0.06);
   --border: rgba(255,255,255,0.12);
   --bg-image: url("bg.png");
-  --feather-start: 62%;
-  --feather-end: 97%;
+  --feather-start: 75%;
+  --feather-end: 95%;
 }
 
 @media (prefers-color-scheme: light){
@@ -36,7 +36,7 @@ body{
 body::before {
   content: "";
   position: fixed;
-  inset: 40px;
+  inset: 60px;
   z-index: 0;
   pointer-events: none;
 
