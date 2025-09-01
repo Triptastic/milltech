@@ -84,11 +84,17 @@ body{
   padding: 10px 16px;
   border-radius: 999px;
   text-decoration:none;
-  color: #0b0b10;
-  background: var(--accent);
+  background: transparent;
+  color: var(--fg);
+  border: 1.5px solid var(--border);
   font-weight: 600;
+  transition: border-color 0.2s, color 0.2s;
 }
-.btn:hover{ filter: brightness(0.95) }
+
+.btn:hover{
+  border-color: var(--accent);
+  color: var(--accent);
+}
 
 .btn.outline{
   background: transparent;
