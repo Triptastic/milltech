@@ -6,8 +6,8 @@
   --card: rgba(255,255,255,0.06);
   --border: rgba(255,255,255,0.12);
   --bg-image: url("bg.png");
-  --feather-start: 75%;
-  --feather-end: 95%;
+  --feather-start: 50%;
+  --feather-end: 70%;
 }
 
 @media (prefers-color-scheme: light){
