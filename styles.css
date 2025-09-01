@@ -2,9 +2,12 @@
   --bg: #0b0b10;
   --fg: #f5f7fa;
   --muted: #b6bcc7;
-  --accent: #3df083; /* friendly nod to your MoveSmart palette */
+  --accent: #3df083; 
   --card: rgba(255,255,255,0.06);
   --border: rgba(255,255,255,0.12);
+  --bg-image: image-set(url("bg.png") 1x, url("bg@2x.webp") 2x);
+  --feather-start: 62%;
+  --feather-end: 97%;
 }
 
 @media (prefers-color-scheme: light){
@@ -27,6 +30,26 @@ body{
     radial-gradient(1000px 600px at 10% 10%, #1a1a25 0%, transparent 60%),
     radial-gradient(1000px 600px at 90% 90%, #15151e 0%, transparent 60%),
     var(--bg);
+  position: relative;
+}
+
+body::before{
+  content:"";
+  position: fixed; 
+  inset: 0;
+  z-index: 0; 
+  background: var(--bg-image) center/cover no-repeat;
+
+  -webkit-mask-image: radial-gradient(
+    circle at 50% 50%,
+    #000 var(--feather-start),
+    transparent var(--feather-end)
+  );
+  mask-image: radial-gradient(
+    circle at 50% 50%,
+    #000 var(--feather-start),
+    transparent var(--feather-end)
+  );
 }
 
 .wrap{
@@ -34,6 +57,8 @@ body{
   display:grid;
   place-items:center;
   padding:48px 20px;
+  position: relative;
+  z-index: 1;
 }
 
 .card{
