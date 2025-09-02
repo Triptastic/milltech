@@ -6,8 +6,6 @@
   --card: rgba(255,255,255,0.06);
   --border: rgba(255,255,255,0.12);
   --bg-image: url("bg.png");
-
-  --feather-size: 20px;
 }
 
 @media (prefers-color-scheme: light){
@@ -45,21 +43,6 @@ body::before {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
-  -webkit-mask-image:
-    linear-gradient(to top,    transparent var(--feather-size), #000 calc(var(--feather-size) + 1px)),
-    linear-gradient(to bottom, transparent var(--feather-size), #000 calc(var(--feather-size) + 1px)),
-    linear-gradient(to left,   transparent var(--feather-size), #000 calc(var(--feather-size) + 1px)),
-    linear-gradient(to right,  transparent var(--feather-size), #000 calc(var(--feather-size) + 1px));
-  -webkit-mask-composite: intersect;
-          mask-composite: intersect;
-
-  mask-image:
-    linear-gradient(to top,    transparent var(--feather-size), #000 calc(var(--feather-size) + 1px)),
-    linear-gradient(to bottom, transparent var(--feather-size), #000 calc(var(--feather-size) + 1px)),
-    linear-gradient(to left,   transparent var(--feather-size), #000 calc(var(--feather-size) + 1px)),
-    linear-gradient(to right,  transparent var(--feather-size), #000 calc(var(--feather-size) + 1px));
-}
 
 .wrap{
   min-height:100%;
