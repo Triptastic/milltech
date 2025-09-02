@@ -7,7 +7,7 @@
   --border: rgba(255,255,255,0.12);
   --bg-image: url("bg.png");
 
-  --feather-size: 60px;
+  --feather-size: 100px;
 }
 
 @media (prefers-color-scheme: light){
