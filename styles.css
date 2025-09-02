@@ -146,6 +146,18 @@ body::before {
 }
 .btn.subtle:hover{ color: var(--fg) }
 
+.logo-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.globe {
+  width: 120px; 
+  height: auto;
+  mix-blend-mode: multiply; 
+}
+
 .foot{
   margin-top: 22px;
   text-align:center;
