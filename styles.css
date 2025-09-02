@@ -46,12 +46,12 @@ body::before {
   background-repeat: no-repeat;
 
   -webkit-mask-image: radial-gradient(
-    circle at 50% 50%,
+    closest-side,
     #000 var(--feather-start),
     transparent var(--feather-end)
   );
-          mask-image: radial-gradient(
-    circle at 50% 50%,
+  mask-image: radial-gradient(
+    closest-side,
     #000 var(--feather-start),
     transparent var(--feather-end)
   );
