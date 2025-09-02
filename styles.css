@@ -8,6 +8,7 @@
   --bg-image: url("bg.png");
   --feather-start: 50%;
   --feather-end: 70%;
+  --feather-size: 40px;
 }
 
 @media (prefers-color-scheme: light){
@@ -45,16 +46,13 @@ body::before {
   background-size: cover;
   background-repeat: no-repeat;
 
-  -webkit-mask-image: radial-gradient(
-    closest-side,
-    #000 var(--feather-start),
-    transparent var(--feather-end)
-  );
-  mask-image: radial-gradient(
-    closest-side,
-    #000 var(--feather-start),
-    transparent var(--feather-end)
-  );
+  -webkit-mask-image:
+    linear-gradient(to top,    transparent var(--feather-size), #000 calc(var(--feather-size) + 1px)),
+    linear-gradient(to bottom, transparent var(--feather-size), #000 calc(var(--feather-size) + 1px)),
+    linear-gradient(to left,   transparent var(--feather-size), #000 calc(var(--feather-size) + 1px)),
+    linear-gradient(to right,  transparent var(--feather-size), #000 calc(var(--feather-size) + 1px));
+  -webkit-mask-composite: intersect;
+  mask-composite: intersect;
 }
 
 .wrap{
