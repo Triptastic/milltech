@@ -155,7 +155,6 @@ body::before {
 .globe {
   width: 120px; 
   height: auto;
-  mix-blend-mode: multiply; 
 }
 
 .foot{
