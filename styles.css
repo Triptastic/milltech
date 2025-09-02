@@ -6,9 +6,8 @@
   --card: rgba(255,255,255,0.06);
   --border: rgba(255,255,255,0.12);
   --bg-image: url("bg.png");
-  --feather-start: 50%;
-  --feather-end: 70%;
-  --feather-size: 40px;
+
+  --feather-size: 60px;
 }
 
 @media (prefers-color-scheme: light){
@@ -23,6 +22,7 @@
 
 *{ box-sizing:border-box }
 html,body{ height:100% }
+
 body{
   margin:0;
   font: 16px/1.5 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji";
@@ -37,7 +37,7 @@ body{
 body::before {
   content: "";
   position: fixed;
-  inset: 60px;
+  inset: 60px; 
   z-index: 0;
   pointer-events: none;
 
@@ -52,7 +52,13 @@ body::before {
     linear-gradient(to left,   transparent var(--feather-size), #000 calc(var(--feather-size) + 1px)),
     linear-gradient(to right,  transparent var(--feather-size), #000 calc(var(--feather-size) + 1px));
   -webkit-mask-composite: intersect;
-  mask-composite: intersect;
+          mask-composite: intersect;
+
+  mask-image:
+    linear-gradient(to top,    transparent var(--feather-size), #000 calc(var(--feather-size) + 1px)),
+    linear-gradient(to bottom, transparent var(--feather-size), #000 calc(var(--feather-size) + 1px)),
+    linear-gradient(to left,   transparent var(--feather-size), #000 calc(var(--feather-size) + 1px)),
+    linear-gradient(to right,  transparent var(--feather-size), #000 calc(var(--feather-size) + 1px));
 }
 
 .wrap{
@@ -93,6 +99,7 @@ body::before {
   font-style: normal;
   margin: 10px 0 22px;
 }
+
 .link{
   color: var(--fg);
   text-decoration: none;
@@ -120,7 +127,6 @@ body::before {
   min-width: 120px; 
   text-align: center; 
 }
-
 
 .btn:hover {
   border-color: var(--accent);
