@@ -7,7 +7,7 @@
   --border: rgba(255,255,255,0.12);
   --bg-image: url("bg.png");
 
-  --feather-size: 0px;
+  --feather-size: 30px;
 }
 
 @media (prefers-color-scheme: light){
@@ -37,7 +37,7 @@ body{
 body::before {
   content: "";
   position: fixed;
-  inset: 60px; 
+  inset: 0px; 
   z-index: 0;
   pointer-events: none;
 
